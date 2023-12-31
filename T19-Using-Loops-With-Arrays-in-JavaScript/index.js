@@ -13,19 +13,23 @@ num.forEach((element) => {
     console.log(element*element);
 });
 */
-// alternatively we can define callback separately
-/*
-const square = (n)=>{
-    console.log( n*n);
-}
-num.forEach(square);
-*/
+// alternatively we can define callback separately --> not a good idea.
+num = [6,12,17,19,21,25,16];
+const newArray = [];
+num.forEach((n)=>{
+    // console.log( n*n);
+    newArray.push(n*n);
+});
+console.log(newArray);
+// That's exactly what map does.
 
 // array.from(str or html collection)
+/*
 const firstName = "shubahm";
 console.log(firstName);
 const nameArray = Array.from(firstName);
 console.log(nameArray);
+*/
 
 // for in loop
 /*
